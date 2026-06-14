@@ -1,11 +1,3 @@
-import streamlit as st
-import requests
-import folium
-from streamlit_folium import st_folium
-import pandas as pd
-import numpy as np
-from src.data.fetch_data import USGSDataFetcher
-from src.utils.config import Config
 
 import sys
 import os
@@ -17,6 +9,15 @@ if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
 print("DEBUG PATH:", sys.path)
+import streamlit as st
+import requests
+import folium
+from streamlit_folium import st_folium
+import pandas as pd
+import numpy as np
+from src.data.fetch_data import USGSDataFetcher
+from src.utils.config import Config
+
 
 # Page Configuration
 st.set_page_config(
