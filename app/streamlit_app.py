@@ -7,6 +7,13 @@ import numpy as np
 from src.data.fetch_data import USGSDataFetcher
 from src.utils.config import Config
 
+
+import sys
+import os
+
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+sys.path.append(ROOT_DIR)
+
 # Page Configuration
 st.set_page_config(
     page_title="SeismoCast | Earthquake Predictive Analytics",
