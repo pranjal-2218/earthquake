@@ -103,7 +103,7 @@ def train() -> None:
 
     # Save models
     logger.info("Exporting models as joblib pickle files...")
-    joblib.dump(clf, "models/classifier.pkl")
+    joblib.dump(clf, "models/classifier.pkl",compress = 3)
     joblib.dump(reg, "models/regressor.pkl")
 
     # Save evaluation metrics
