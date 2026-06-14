@@ -1,0 +1,23 @@
+seismocast/
+│
+├── app/
+│   └── streamlit_app.py
+│
+├── src/
+│   ├── api/
+│   │   └── main.py
+│   │
+│   ├── data/
+│   │   └── fetch_data.py
+│   │
+│   ├── models/
+│   │   ├── train_models.py
+│   │
+│   └── utils/
+│       └── config.py
+│
+├── models/
+│   ├── classifier.pkl
+│   ├── regressor.pkl
+│
+├── requirements.txt
