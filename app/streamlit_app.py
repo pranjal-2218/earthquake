@@ -7,12 +7,16 @@ import numpy as np
 from src.data.fetch_data import USGSDataFetcher
 from src.utils.config import Config
 
-
 import sys
 import os
 
-ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-sys.path.append(ROOT_DIR)
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.abspath(os.path.join(CURRENT_DIR, ".."))
+
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
+print("DEBUG PATH:", sys.path)
 
 # Page Configuration
 st.set_page_config(
